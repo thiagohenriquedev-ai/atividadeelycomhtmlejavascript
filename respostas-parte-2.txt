@@ -1,0 +1,19 @@
+Respostas às perguntas de reflexão e modificações (Estudo Dirigido)
+Questão 1 — Passo 4: Se o valor já passou pelas verificações de campo vazio e isNaN, ele é um número válido. Se não é maior que zero (numero > 0) e não é menor que zero (numero < 0), a única possibilidade matemática restante é ser igual a zero.
+
+Questão 2 — Passo 5: Ao trocar && por ||, basta que apenas uma das condições seja verdadeira para aprovar o aluno (por exemplo, média 8 com frequência 74 passaria a ser aprovado, ou média 6.9 com frequência 90 também seria aprovado).
+
+Questão 3 — Passo 4: Porque o operador lógico || (OU) retorna true quando pelo menos uma das condições é verdadeira — e também quando ambas são verdadeiras. Como 120 >= 100 e cupom === "frete" são verdadeiras, a condição completa avalia como true e concede frete grátis.
+
+Questão 4 — Passo 4: Porque a entrada só é válida se for "sim" ou "nao". Pela negação lógica (Leis de De Morgan), não ser "sim" e ao mesmo tempo não ser "nao" caracteriza uma resposta inválida. Se usássemos ||, "sim" seria diferente de "nao" (verdadeiro) e dispararia o erro indevidamente.
+
+Questão 5 — Passo 4: Sem o break no case 1, o fluxo faz fall-through e executa também o case 2, sobrescrevendo saida.innerText com "Turno: tarde." (e continuaria descendo até encontrar um break ou o default).
+
+Questão 6 — Passo 5:
+
+Tabuada de 1 a 12: altere a condição do laço para i <= 12.
+
+Apenas multiplicadores pares (2, 4, 6, 8 e 10): inicie em let i = 2, mantenha i <= 10 e atualize com i += 2.
+
+Questão 7 — Passo 5: Para uma contagem crescente de 0 até limite (onde limite é o número inteiro digitado de 1 a 100):
+
